@@ -1,0 +1,603 @@
+/* font-family: 'Hina Mincho', serif;
+font-family: 'Roboto', sans-serif; */
+
+        /* GLOBAL */
+*, *::before , *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+.btn{
+    background-color: rgb(3, 219, 154);
+    border: solid 2px rgb(3, 219, 154);
+    padding: 5px 0;
+    width: 120px;
+    border-radius: 30px;
+    color:white;
+    line-height: normal;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+h2{
+    color: grey;
+    font-size: 42px;
+    font-weight: 100;
+    font-family: "roboto",sans-serif;
+    
+}
+h3{
+    color: black;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: "roboto",sans-serif;
+}
+p{
+    color: gray;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "roboto",sans-serif;
+    line-height: 30px;
+    margin: 10px auto;
+    text-align: center;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.belt{  
+    margin: 20px auto;
+    height: 0.5px;
+    width: 25px;
+    background-color: rgb(3, 219, 154);
+}
+.icon{
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    height: 250px;
+    width: 250px;
+}
+.container{
+    max-width: 980px;
+    margin: 50px auto 50px auto;   
+}
+.container_column{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    line-height: 50px;
+}
+.container_row{
+    display: flex;
+    flex-flow: row;
+}
+i{
+    height: 60px;
+    width: 60px;
+    
+}
+    /* NAVIGATION */
+header{
+    width: 100vw;
+}
+    nav{
+    position: relative;
+    
+}
+ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;  
+}
+li{
+    list-style: none;
+    
+    
+}
+a{
+    color: white;
+    line-height: 90px;
+    margin-right: 50px;
+    
+}
+.fa-search{
+    height: 0;
+    width: 0;
+    margin-left: 60px;
+    margin-right: 9vw;
+    font-size: 15px;
+}
+.logo{
+    position:absolute;
+    left: 5vh;
+    top: -1vh;
+    font-size: 34px;
+    text-transform: none;
+}
+.dot{
+    color:rgb(3, 219, 154) ;
+    font-size: 60px;
+}
+    /* MAIN HEADER */   
+header{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1) ), url("/images/aurora.jpg");
+    background-repeat: no-repeat;
+   background-size: cover;
+   height: 110vh;
+}
+h1{
+    color: white;
+    font-size: 3em;
+    font-weight: 900;
+    text-align: center;
+    line-height: 70px;
+    font-family: Roboto,sans-serif;
+}
+span{
+    font-weight: 100;
+}
+header div p{
+    color: white;
+    line-height: 70px;
+}
+header div{
+    line-height: 50px;
+    height: 70%;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+}
+.btn-one{
+    border-color: white;
+    color: white;
+    background-color: transparent;
+}
+    /*ABOUT US */
+.about .fas{
+    font-size: 60px;
+    height: 150px;
+    width: 150px;
+    background-color: rgba(128, 128, 128, 0.1);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.36);
+}
+.about .fas:hover{
+    background-color: rgb(3, 219, 154);
+    color: white;
+}
+    /*EQUIPMENT*/
+.equipment{
+    margin: 80px auto;
+    width: 100vw;
+}
+.camera{
+   padding: 70px 12vw; 
+    background-color: rgba(128, 128, 128, 0.05);
+  
+}
+.equipment p{
+    margin: 20px auto;
+    text-align: left;
+    
+}
+.portable{
+    flex-flow: row-reverse;
+    padding: 70px 12vw;
+}
+.equipment_info{
+    align-items: flex-start;
+    text-align: left;
+    margin: 0 40px;
+}
+    /*ABOUT ME */
+.aboutMe img{
+    height: 90px;
+    width: 120px;
+    border-radius: 100%;
+}
+.aboutMe{
+   height: 80vh;
+   width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ),url(/images/room.jpg) ;
+}
+.aboutMe h3{
+    color: white;
+}
+.aboutMe p{
+    color: grey;
+}
+.aboutMe>div{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    /* SERVICES */
+.our-services{
+    background-color: rgba(128, 128, 128, 0.05);
+    padding-top: 50px;
+    width: 100vw;
+}
+.our-services .container {
+    margin-top: 0;
+}
+.container_services{
+    display: flex;
+    flex-flow: row wrap;
+    flex: 0,0,50%;
+    max-width: 1100px;
+    justify-content: space-evenly;
+    margin: auto;
+}
+.about_services{
+    width: 50%;
+    padding: 60px 30px;
+
+}
+.about_services p{
+    text-align: left;
+}
+.about_services .fas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(3, 219, 154);
+    font-size: 27px;
+    border-radius: 100%;
+    background-color: white;
+    height: 60px;
+    width: 80px;
+    margin-right: 20px;
+}
+.about_services .fas:hover{
+    background-color: white;
+    color: rgb(3, 219, 154);
+}
+    /* OUR TEAM */
+.our-team{
+    width: 100vw;
+    
+}
+.photos{
+    display: flex;
+    flex-flow: row wrap;
+}
+.photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    height: 20vw;
+    
+    
+}
+.photo h3{
+    font-size: 36px;
+    color: white;
+    font-family: "Roboto",sans-serif;
+    display: none;
+}
+.photo-one{
+    background-size: contain;
+    background-image: url(https://i.guim.co.uk/img/media/684c9d087dab923db1ce4057903f03293b07deac/205_132_1915_1150/master/1915.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=14a95b5026c1567b823629ba35c40aa0);
+}
+.photo-two{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://www.guidedogs.org/wp-content/uploads/2015/06/collar-600x600.jpg);
+}
+.photo-three{
+    background-size: contain;
+    background-image: url(https://www.thesprucepets.com/thmb/1maQOdLClYjEu-lSEKb8d7KM5lw=/735x0/_hero_SQ_Soft-Touch-Leather-Dog-Collar-1-5be6eedc530643eba0a6b14466afbf1c.jpg);
+}
+.photo-one:hover{
+    opacity: 2;
+}
+.background{
+    background-color: rgba(3, 219, 154, 1) ;
+    
+}
+.photo:hover{
+    background-color: rgba(3, 219, 154, 0.8) ;
+    display: flex;
+    z-index: 3;
+}
+/*PRICING*/
+.pricing{
+    background-color: rgba(128, 128, 128, 0.05);
+margin-top: 0;
+padding-top: 50px;
+width: 100vw;
+}
+.purchases{
+    display: flex;
+    justify-content: space-evenly;
+padding-bottom: 70px;
+}
+.offerts{
+    width: 225px;
+    background-color: white;
+    margin: 0 30px;
+    align-items: flex-start;
+    
+}
+.offerts h2{
+    color: rgb(3, 219, 154);
+    padding: 15px 15px;
+    padding-bottom: 5px;
+    text-align: left;
+}
+.offerts p{
+    text-align: left;
+    margin: 0;
+    padding: 55px 15px;
+    padding-top: 35px;
+    width: 100%;
+    
+}
+.offerts h6{
+    padding: 0 15px;
+    border-bottom: rgba(128, 128, 128, 0.137) solid 2px;
+    width: 100%;
+    font-size: 14px;
+    color: rgba(17, 17, 17, 0.158);
+    line-height: 15px;
+    padding-bottom: 40px;
+}
+.purchase{
+    background-color: rgb(3, 219, 154) ;
+    color:white;
+    margin: 0;
+    padding:0 15px;
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    display: flex;
+    vertical-align: middle;
+    line-height: 40px;
+    
+}
+.purchases .fas{
+    margin-left: 80px;
+    height: 10px;
+    width: 10px;
+    line-height: 40px;
+    
+}
+/* OUR LOCATIONS */
+.locations{
+    width: 100vw;
+}
+.world-map{
+    background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/World_map_%28blue_dots%29.svg/1280px-World_map_%28blue_dots%29.svg.png);
+    width:50vw;
+    height: 434px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.Our-Locations{
+    width: 50%;
+    align-items: flex-start;
+    margin: 50px 20px 50px 200px;
+}
+.Our-Locations p{
+    text-align: left;
+    line-height: 35px;
+    margin-top: 20px;
+}
+.Our-Locations .btn{
+    margin-top: 20px;
+}
+.template{
+    height: 50vh;
+    width: 100vw;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ),url(https://cdn.pixabay.com/photo/2013/10/02/23/03/mountains-190055_960_720.jpg) ;
+}
+.template .btn{
+    margin-top: 30px;
+}
+.template h2{
+    color: white;
+}
+.template span{
+    font-weight: 900;
+}
+            /*FOOTER*/
+footer{
+display: flex;
+flex-flow: column;
+position: relative;
+height: 50vh;
+
+}
+
+.copyright{
+    display: flex;
+    flex-flow: row-reverse;
+    height: 10vh;
+}
+.footer .nav{
+    align-items: flex-start;
+}
+
+.footer a{
+color: rgba(0, 0, 0, 0.212);
+line-height: 0;
+}
+.footer a:hover{
+    color: black;
+}
+.footer li{
+    height: 10px;
+}
+.fab{
+    color:rgb(3, 219, 154);
+}
+.copyright p{
+    margin: 30px 700px 15px 20px;
+    vertical-align: middle;
+    width: 50vw;
+}
+ footer>.fa-autoprefixer{
+    font-size: 500px;
+    position: absolute;
+    color: rgba(128, 128, 128, 0.137);
+    left: 30%;
+    z-index: -1;
+    bottom: 150%;
+
+    
+    
+}
+
+/* MEDIA QUERY */
+@media only screen and (max-width: 740px) {
+    /* NAVIGATION MEDIA */
+.logo, .fa-search{
+        display: none;
+}
+nav ul{
+        justify-content: space-evenly;
+        align-items: flex-end;
+        background-color: rgba(0, 0, 0, 0.2);       
+        
+    } 
+li{
+        text-align: center;       
+}
+ a{
+     line-height: 60px;
+        margin: 0;
+}
+     /*ABOUT US*/  
+  .about_us div{
+      flex-flow: column;
+      margin-top: 20px;
+  }
+     /*EQUIPMENT */
+  
+  .portable{
+      flex-flow: column;
+  }
+  
+  .camera{
+      flex-flow: column;
+  }
+  .camera img{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .equipment_info{
+      align-items: center;
+  }
+  .equipment_info p{
+      text-align: center;
+  }
+     /*ABOUT ME */
+     
+     .aboutMe h3{
+         margin: 30px 15px;
+         text-align: center;
+}
+/*SERVICES */
+.container_services{
+    flex-flow: column;
+    width: 90vw;
+    align-items: center;
+}
+.about_services{
+    flex-flow: column;
+    margin: auto;
+    width: 90vw;
+    align-items: center;
+    padding-bottom: 0;
+}
+.about_services h2{
+    text-align: center;
+
+}
+.about_services p{
+    text-align: center;
+    
+}
+.about_services .fas{
+    margin-right: 0;
+}
+
+/*PRICING*/
+.purchases{
+    display: table-column;
+}
+.offerts{
+    margin-top: 20px;
+}
+/*OUR LOCATIONS */
+.locations{
+    flex-flow: column;
+    align-items: center;
+}
+.Our-Locations{
+    margin: 30px 15px;
+    align-items: center;
+}
+.world-map{
+    width: 100vw;
+    height: 200px;
+}
+.Our-Locations p{
+    text-align: center;
+}
+.Our-Locations h2{
+    text-align: center;
+}
+        /*TEMPLATE*/
+.template h2{
+    text-align: center;
+}
+/*FOOTER*/
+
+.copyright{
+    flex-flow: column;
+}
+.footer{
+    height: 20vh;
+    justify-content: space-between;
+    margin: 20px 15px;
+}
+.footer a{
+    display: block;
+    line-height: 40px;
+}
+footer>.fa-autoprefixer{
+    font-size: 250px;
+    left: 7%;
+    bottom: 110%;
+}
+.copyright p{
+    margin: 0;
+    position: absolute;
+    bottom: 0%;
+    left: 1%;
+    width:80vw;
+    height: 10vw;
+    
+}
+}
