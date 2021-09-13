@@ -285,12 +285,7 @@ header div{
     
     
 }
-.photo h3{
-    font-size: 36px;
-    color: white;
-    font-family: "Roboto",sans-serif;
-    display: none;
-}
+
 .photo-one{
     background-size: contain;
     background-image: url(https://i.guim.co.uk/img/media/684c9d087dab923db1ce4057903f03293b07deac/205_132_1915_1150/master/1915.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=14a95b5026c1567b823629ba35c40aa0);
@@ -304,9 +299,7 @@ header div{
     background-size: contain;
     background-image: url(https://www.thesprucepets.com/thmb/1maQOdLClYjEu-lSEKb8d7KM5lw=/735x0/_hero_SQ_Soft-Touch-Leather-Dog-Collar-1-5be6eedc530643eba0a6b14466afbf1c.jpg);
 }
-.photo-one:hover{
-    opacity: 2;
-}
+
 .background{
     background-color: rgba(3, 219, 154, 1) ;
     
@@ -314,8 +307,27 @@ header div{
 .photo:hover{
     background-color: rgba(3, 219, 154, 0.8) ;
     display: flex;
-    z-index: 3;
+    
 }
+.photo_content{
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0);
+    
+    
+    
+}
+.photo_content:hover{
+    background-color: rgba(3, 219, 154, 0.8);
+    color: rgb(255, 255, 255);
+
+}
+
+
+.names:hover{
+    display: flex;
+    z-index: 5;
+}
+
 /*PRICING*/
 .pricing{
     background-color: rgba(128, 128, 128, 0.05);
@@ -599,5 +611,8 @@ footer>.fa-autoprefixer{
     width:80vw;
     height: 10vw;
     
+}
+.photo_content{
+    font-size: 12px;
 }
 }
